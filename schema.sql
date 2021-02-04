@@ -28,11 +28,14 @@ CREATE TABLE `admin` (
 CREATE TABLE `projects` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `project_title` varchar(255) NOT NULL,
+  `project_image` varchar(255) NOT NULL,
   `project_description` varchar(255) NOT NULL
 );
 
-INSERT INTO projects (project_title) VALUES 
-  ("CJF tennis");
+INSERT INTO projects (project_title, project_image) VALUES
+  ("CV de Bender", "bender-face-menu.png"),
+  ("My Sup'r Hero", "logo-msh.png"),
+  ("CJF tennis", "logo-cjf.jpeg");
 
 CREATE TABLE `contact` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
