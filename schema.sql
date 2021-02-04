@@ -31,6 +31,9 @@ CREATE TABLE `projects` (
   `project_description` varchar(255) NOT NULL
 );
 
+INSERT INTO projects (project_title) VALUES 
+  ("CJF tennis");
+
 CREATE TABLE `contact` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `email` varchar(100) NOT NULL,
