@@ -28,8 +28,8 @@ CREATE TABLE `admin` (
 CREATE TABLE `projects` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `project_title` varchar(255) NOT NULL,
-  `project_image` varchar(255) NOT NULL,
-  `project_description` varchar(255) NOT NULL
+  `project_image` varchar(255) NULL,
+  `project_description` varchar(255) NULL
 );
 
 INSERT INTO projects (project_title, project_image) VALUES
@@ -39,6 +39,6 @@ INSERT INTO projects (project_title, project_image) VALUES
 
 CREATE TABLE `contact` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `email` varchar(100) NOT NULL,
+  `name` varchar(30) NOT NULL,
   `message` varchar(255) NOT NULL
 );
