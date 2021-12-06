@@ -3,8 +3,10 @@ const adminRouter = require('./routes/admin.routes.js');
 const contactRouter = require('./routes/contact.routes.js');
 const projectsRouter = require('./routes/projects.routes.js');
 const sn_linksRouter = require('./routes/sn_links.routes.js');
+const registerRouter = require('./routes/register.routes.js');
 
 router.use('/admins', adminRouter);
+router.use('/register', registerRouter);
 router.use('/contact', contactRouter);
 router.use('/projects', projectsRouter);
 router.use('/sn_links', sn_linksRouter);

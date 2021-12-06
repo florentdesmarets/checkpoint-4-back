@@ -21,9 +21,10 @@ CREATE TABLE `sn_links` (
 
 CREATE TABLE `admin` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `password` int NOT NULL
+  `username` varchar(255) NOT NULL UNIQUE,
+  `password` varchar(255) NOT NULL
 );
+
 
 CREATE TABLE `projects` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,

@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
   });
 });
 
-router.post('/', (req, res) => {
+
+  router.post('/', (req, res) => {
     const sql = "INSERT INTO contact SET ?";
     connection.query(sql, req.body, (err, results) => {
       if (err) {
